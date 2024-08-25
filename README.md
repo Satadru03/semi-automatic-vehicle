@@ -257,4 +257,54 @@ void stopMotors() {
 - MPU6050 accelerometer and gyroscope sensor
 - Arduino board (e.g., Uno)
 - Bluetooth module (e.g., HC-05)
-- Motors and motor driver (e.g., L298N or
+- Motors and motor driver (e.g., L298N or Adafruit Motor Shield)
+- Ultrasonic sensor (e.g., HC-SR04)
+- Power supply (e.g., battery pack)
+- Connecting wires and breadboard
+- Chassis for the car (with wheels and motors)
+
+## Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/semi-automatic-vehicle.git
+   cd semi-automatic-vehicle
+   ```
+
+2. **Install Required Libraries:**
+   Ensure you have the following libraries installed in your Arduino IDE:
+   - [AFMotor Library](https://github.com/adafruit/Adafruit-Motor-Shield-library)
+   - [MPU6050 Library](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050)
+   - [NewPing Library](https://bitbucket.org/teckel12/arduino-new-ping/downloads/)
+   - [SoftwareSerial Library](https://www.arduino.cc/en/Reference/SoftwareSerial)
+
+3. **Upload the Code:**
+   - Open the `gesture_transmitter.ino` file in the Arduino IDE, select the correct board and port, and upload the code to the transmitter device (Arduino with MPU6050 and Bluetooth module).
+   - Open the `car_receiver.ino` file, select the correct board and port, and upload the code to the receiver device (Arduino on the vehicle).
+
+## Usage
+
+1. **Set Up the Hardware:**
+   - Assemble the vehicle chassis with motors, motor driver, and ultrasonic sensor.
+   - Connect the MPU6050 sensor and Bluetooth module to the Arduino for the gesture transmitter.
+   - Connect the motor driver, ultrasonic sensor, and Bluetooth module to the Arduino on the vehicle.
+
+2. **Power On:**
+   - Power on the Arduino boards and ensure the Bluetooth modules are paired.
+
+3. **Control the Vehicle:**
+   - Use specific hand gestures to control the vehicle:
+     - **Forward (F):** Move the vehicle forward.
+     - **Backward (B):** Move the vehicle backward.
+     - **Left (L):** Turn the vehicle left.
+     - **Right (R):** Turn the vehicle right.
+     - **Stop (S):** Stop the vehicle.
+   - The vehicle will automatically stop if an obstacle is detected within 25 cm while moving forward.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+This README provides an overview and usage instructions for the semi-automatic vehicle project. Make sure to customize any URLs or specific information related to your setup.
