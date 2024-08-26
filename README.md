@@ -1,7 +1,3 @@
-Here's the complete README file for your GitHub repository titled "semi-automatic-vehicle."
-
----
-
 # Semi-Automatic Vehicle
 
 This repository contains the code for a semi-automatic vehicle project that is controlled using hand gestures. The project uses an MPU6050 sensor for gesture detection and communicates commands to a vehicle via Bluetooth. The vehicle can detect obstacles and adjust its movement accordingly.
@@ -14,6 +10,7 @@ This repository contains the code for a semi-automatic vehicle project that is c
 - [Hardware Requirements](#hardware-requirements)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Future Scope](#future-scope)
 - [License](#license)
 
 ## Project Overview
@@ -301,10 +298,10 @@ void stopMotors() {
      - **Stop (S):** Stop the vehicle.
    - The vehicle will automatically stop if an obstacle is detected within 25 cm while moving forward.
 
+## Future Scope
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-
-This README provides an overview and usage instructions for the semi-automatic vehicle project. Make sure to customize any URLs or specific information related to your setup.
